@@ -1,0 +1,24 @@
+showcase website about yourself
+poster persentation
+
+don't ignore feedback, have a website that runs and is fairly well organized
+
+
+don't be absent for the first opportunity
+
+just use my CV for the website
+
+official HZ logos are provided
+
+full browser and device support not required and not graded
+
+keep code clean
+
+
+use http://localhost/
+
+don't put your personal no phone number or address on the site
+
+site has to be online
+
+you.github
