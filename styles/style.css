@@ -1,5 +1,36 @@
-nav {font-family: Arial};
-img {width: 200px; height:auto};
+nav {
+    font-family: Arial
+}
+
+img {
+    width: 200px;
+    height: auto
+}
+
+/* body {
+max-width: 500px; display: flex; justify-content: center;
+} */
+
+main {
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+/* main {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+} */
+
+article {
+    max-width: 500px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+p {
+    color: red;
+}
 
 
 /* Arial, Helvetica, sans-serif */
