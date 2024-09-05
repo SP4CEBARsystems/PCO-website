@@ -3,13 +3,21 @@ nav {
 }
 
 img {
-    width: 200px;
-    height: auto
+    /* width: 200px;
+    height: auto; */
+    
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 /* body {
 max-width: 500px; display: flex; justify-content: center;
 } */
+
+body {
+    background: black;
+}
 
 main {
     max-width: fit-content;
@@ -23,14 +31,41 @@ main {
 } */
 
 article {
-    max-width: 500px;
+    max-width: 800px;
     /* display: flex;
     flex-direction: column; */
 }
 
-p {
+/* p {
     color: red;
+} */
+
+.programsImageBackground {
+    background-image: url('../assets/all_nx_programs.png');
+}
+.codeImageBackground {
+    background-image: url('../assets/lots_of_code.png');
 }
 
+.imageBackground {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 500px;
+    padding: 50px;
+}
+
+.textAndImage {
+    display: flex; flex-direction: row;
+}
+
+.textBackground{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+/* .background-image {z-index: 1;} */
 
 /* Arial, Helvetica, sans-serif */
