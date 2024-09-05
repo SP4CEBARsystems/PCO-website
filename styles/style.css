@@ -17,6 +17,7 @@ max-width: 500px; display: flex; justify-content: center;
 
 body {
     background: black;
+    color: white;
 }
 
 main {
@@ -43,7 +44,7 @@ article {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding: 50px;
+    padding: 100px 0px 50px 0px;
     /* max-width: fit-content; */
     /* margin-inline: auto; */
 }
@@ -53,7 +54,7 @@ article {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding: 50px;
+    padding: 50px 0px 50px 0px;
     /* max-width: fit-content; */
     /* margin-inline: auto; */
 }
@@ -73,7 +74,7 @@ article {
     margin-inline: auto;
     /* display: flex;
     flex-direction: column; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 nav {
@@ -83,7 +84,16 @@ nav {
     display: flex;
     flex-direction: row;
     background: rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
     /* margin-bottom: 50px; */
+}
+
+.navButtons {
+    /* flex: 1; */
+    /* flex: 1; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .navButton {
@@ -94,8 +104,33 @@ nav {
     /* flex  */
 }
 
+.homeButton {
+    /* flex: 1; */
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex  */
+}
+
+.homeButton:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
 .navButton:hover {
-    background-color: black;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.rightNavButton:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.rightNavButton {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex */
 }
 
 /* .background-image {z-index: 1;} */
