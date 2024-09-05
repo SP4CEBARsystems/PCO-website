@@ -20,8 +20,8 @@ body {
     color: white;
 }
 
-main {
-}
+/* main {
+} */
 
 /* main {
     max-width: 500px;
@@ -29,11 +29,11 @@ main {
     justify-content: center;
 } */
 
-article {
-    /* display: flex;
-    flex-direction: column; */
-    /* margin-top: 50px; */
-}
+/* article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+} */
 
 /* p {
     color: red;
@@ -59,10 +59,10 @@ article {
     /* margin-inline: auto; */
 }
 
-.textAndImage {
-    /* display: flex;
-    flex-direction: row; */
-}
+/* .textAndImage {
+    display: flex;
+    flex-direction: row;
+} */
 
 .textBackground{
     max-width: 800px;
