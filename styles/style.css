@@ -6,9 +6,9 @@ img {
     /* width: 200px;
     height: auto; */
     
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 /* body {
@@ -42,21 +42,22 @@ article {
 
 .programsImageBackground {
     background-image: url('../assets/all_nx_programs.png');
-}
-.codeImageBackground {
-    background-image: url('../assets/lots_of_code.png');
-}
-
-.imageBackground {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 500px;
+    padding: 50px;
+}
+.codeImageBackground {
+    background-image: url('../assets/lots_of_code.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 50px;
 }
 
 .textAndImage {
-    display: flex; flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .textBackground{
@@ -64,6 +65,9 @@ article {
     color: white;
     padding: 50px;
     border-radius: 25px;
+    min-height: 200px;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 /* .background-image {z-index: 1;} */
