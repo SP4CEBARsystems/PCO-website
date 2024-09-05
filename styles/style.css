@@ -20,8 +20,6 @@ body {
 }
 
 main {
-    max-width: fit-content;
-    margin-inline: auto;
 }
 
 /* main {
@@ -31,7 +29,6 @@ main {
 } */
 
 article {
-    max-width: 800px;
     /* display: flex;
     flex-direction: column; */
 }
@@ -41,31 +38,38 @@ article {
 } */
 
 .programsImageBackground {
-    background-image: url('../assets/all_nx_programs.png');
+    background-image: linear-gradient(to right, black, transparent, black), url('../assets/all_nx_programs.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     padding: 50px;
+    /* max-width: fit-content; */
+    /* margin-inline: auto; */
 }
 .codeImageBackground {
-    background-image: url('../assets/lots_of_code.png');
+    background-image: linear-gradient(to right, black, transparent, black), url('../assets/lots_of_code.png');
+    /* background-image: linear-gradient(rgba(255, 0, 0, 0.263), rgba(255, 255, 0, 0.318)); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     padding: 50px;
+    /* max-width: fit-content; */
+    /* margin-inline: auto; */
 }
 
 .textAndImage {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .textBackground{
+    max-width: 800px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 50px;
     border-radius: 25px;
-    min-height: 200px;
+    min-height: 500px;
+    margin-inline: auto;
     /* display: flex;
     flex-direction: column; */
 }
