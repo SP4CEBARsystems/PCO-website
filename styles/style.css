@@ -156,14 +156,14 @@ table {
 tr.failed {
     background-color: rgba(255, 0, 0, 0.5);
 }
-tr.passed {
+.passed {
     background-color: rgba(0, 255, 0, 0.5);
 }
-tr.active{
+.active{
     background-color: rgba(0, 0, 0, 0);
     color: #fff;
 }
-tr.empty{
+.empty{
     background-color: rgba(0, 0, 0, 0);
     color: #444;
 }
