@@ -1,86 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Dashboard</title>
-        <link rel="stylesheet" href="../styles/style.css">
-    </head>
-    <body>
-        <main>
-            <nav>
-                <a href="../index.htm">
-                    <div class="homeButton">
-                        <p>home</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a href="../index.htm">
+                <div class="homeButton">
+                    <p>home</p>
+                </div>
+            </a>
+            <div class="navButtons">
+                <a href="../pages/blog.htm">
+                    <div class="rightNavButton">
+                        <p>blog</p>
                     </div>
                 </a>
-                <div class="navButtons">
-                    <a href="../pages/blog.htm">
-                        <div class="rightNavButton">
-                            <p>blog</p>
-                        </div>
-                    </a>
-                    <a href="../pages/dashboard.htm">
-                        <div class="rightNavButton">
-                            <p>dashboard</p>
-                        </div>
-                    </a>
-                    <a href="../pages/faq.htm">
-                        <div class="rightNavButton">
-                            <p>faq</p>
-                        </div>
-                    </a>
-                    <a href="../pages/profile.htm">
-                        <div class="rightNavButton">
-                            <p>profile</p>
-                        </div>
-                    </a>
-                </div>
-            </nav>
-            <article>
-                <div class="textAndImage, programsImageBackground">
-                    <div class=textBackground>
-                        <h1>Dashboard</h1>
-                        <p>
-                            Since my first program in 2018 I have enjoyed programming. I have written many kinds of programs in many languages, of which 
-                        </p>
-                        <ul>
-                            <li>BASIC,</li>
-                            <li>C,</li>
-                            <li>React,</li>
-                            <li>React Native,</li>
-                            <li>AutoHotKey,</li>
-                            <li>Processing,</li>
-                            <li>Arduino,</li>
-                            <li>Unity,</li>
-                        </ul>
-                        <p>
-                            and of course
-                        </p>
-                        <ul>
-                            <li>HTML,</li>
-                            <li>CSS,</li>
-                            <li>and Javascript.</li>
-                        </ul>
-                        <p>
-                            I like the simplicity and reliability offered by HTML with javascript, allowing sophiscticated online tools to be made.
-                        </p>
+                <a href="../pages/dashboard.htm">
+                    <div class="rightNavButton">
+                        <p>dashboard</p>
                     </div>
-                    <!-- <img class="background-image" src="../assets/all_nx_programs.png" alt="all my Lowres NX BASIC programs"/> -->
-                </div>
-                <div class="textAndImage, codeImageBackground">
-                    <div class=textBackground>
-                        <p>
-                            My biggest project yet is my quest to generate personal plannings, I started in React Native, now I am on my second attempt in HTML CSS and JavaScript. Hundreds of hours I have spent on it so far, but I am finally getting somewhere.
-                        </p>
+                </a>
+                <a href="../pages/faq.htm">
+                    <div class="rightNavButton">
+                        <p>faq</p>
                     </div>
-                    <!-- <img class="background-image" src="../assets/lots_of_code.png" alt="lots of code from my planning tool"/> -->
+                </a>
+                <a href="../pages/profile.htm">
+                    <div class="rightNavButton">
+                        <p>profile</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <article>
+            <div class="textAndImage, programsImageBackground">
+                <div class=textBackground>
+                    <h1>Dashboard</h1>
+                    <table>
+                        <tr>
+                            <!-- <th>Component</th>
+                                <th>Course</th>
+                                <th>Points</th>
+                                <th>Result</th>
+                                <th>Category</th> -->
+
+                            <th>Quartile</th>
+                            <th>Course</th>
+                            <th>EC</th>
+                            <th>Exam</th>
+                            <th>Weight</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr class = "active">
+                            <td rowspan="4">Block 1: Introduction to Computer Science</td>
+                            <td>CU75001V3 Program & Career Orientation</td>
+                            <td>2.5</td>
+                            <td>Presentation (individual)</td>
+                            <td>100%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "active">
+                            <td>CU75002V2 Computer Science Basics</td>
+                            <td>5.0</td>
+                            <td>Written knowledge test</td>
+                            <td>100%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "active">
+                            <td>CU75003V1 Programming Basics</td>
+                            <td>5.0</td>
+                            <td>Case test</td>
+                            <td>100%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "active">
+                            <td>CU75068V3 Personal Professional Development Exploration</td>
+                            <td>12.5</td>
+                            <td>Criterion-focused interview</td>
+                            <td>100%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td rowspan="2">Block 2: Game Development</td>
+                            <td rowspan="2">CU75004V1 Object-Oriented Programming</td>
+                            <td rowspan="2">10.0</td>
+                            <td>Group presentation</td>
+                            <td>50%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td>Written knowledge test</td>
+                            <td>50%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td rowspan="5">Block 3: Modern Software Development 1</td>
+                            <td rowspan="4">CU75080V2 Framework Project 1</td>
+                            <td rowspan="4">10.0</td>
+                            <td>On-site case test</td>
+                            <td>40%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td>Database exam</td>
+                            <td>10%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td>Group presentation project results</td>
+                            <td>25%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td>Group portfolio on requirements</td>
+                            <td>25%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td>CU75081V1 Business IT Consultancy Basics</td>
+                            <td>2.5</td>
+                            <td>Video</td>
+                            <td>100%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td rowspan="3">Block 4: Modern Software Development 2</td>
+                            <td rowspan="3">CU75011V3 Framework Project 2</td>
+                            <td rowspan="3">10.0</td>
+                            <td>Final delivery</td>
+                            <td>25%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td>Individual project assessment</td>
+                            <td>25%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class = "empty">
+                            <td>IT development portfolio</td>
+                            <td>50%</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Since my first program in 2018 I have enjoyed programming. I have written many kinds of programs
+                        in many languages, of which
+                    </p>
+                    <ul>
+                        <li>BASIC,</li>
+                        <li>C,</li>
+                        <li>React,</li>
+                        <li>React Native,</li>
+                        <li>AutoHotKey,</li>
+                        <li>Processing,</li>
+                        <li>Arduino,</li>
+                        <li>Unity,</li>
+                    </ul>
+                    <p>
+                        and of course
+                    </p>
+                    <ul>
+                        <li>HTML,</li>
+                        <li>CSS,</li>
+                        <li>and Javascript.</li>
+                    </ul>
+                    <p>
+                        I like the simplicity and reliability offered by HTML with javascript, allowing sophiscticated
+                        online tools to be made.
+                    </p>
                 </div>
-            </article>
-        </main>
-        <script src="../scripts/script.js"></script>
-    </body>
+                <!-- <img class="background-image" src="../assets/all_nx_programs.png" alt="all my Lowres NX BASIC programs"/> -->
+            </div>
+            <div class="textAndImage, codeImageBackground">
+                <div class=textBackground>
+                    <p>
+                        My biggest project yet is my quest to generate personal plannings, I started in React Native,
+                        now I am on my second attempt in HTML CSS and JavaScript. Hundreds of hours I have spent on it
+                        so far, but I am finally getting somewhere.
+                    </p>
+                </div>
+                <!-- <img class="background-image" src="../assets/lots_of_code.png" alt="lots of code from my planning tool"/> -->
+            </div>
+        </article>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
 </html>
 
 <!--

@@ -148,3 +148,30 @@ a:visited {
 /* a:hover {
     color: blue;
 } */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr.failed {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+tr.passed {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+tr.active{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+tr.empty{
+    background-color: rgba(0, 0, 0, 0);
+    color: #444;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #020202;
+}
