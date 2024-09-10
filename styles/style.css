@@ -163,7 +163,7 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
-tr.failed {
+.failed {
     background-color: rgba(255, 0, 0, 0.5);
 }
 .passed {
@@ -184,4 +184,33 @@ th, td {
 }
 th {
     background-color: #020202;
+}
+
+
+.table {
+    display:flex;
+    flex-direction: column;
+    flex-direction: column;
+}
+
+.tr {
+    display:flex;
+    flex-direction: row;
+}
+
+.th {
+    display:flex;
+    background-color: #020202;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+    flex: 1;
+}
+
+.td {
+    display:flex;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+    flex: 1;
 }
