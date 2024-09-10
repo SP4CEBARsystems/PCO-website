@@ -42,9 +42,6 @@ body {
 
 .programsImageBackground {
     background-image: linear-gradient(to right, black, transparent, black), url('../assets/all_nx_programs.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     padding: 100px 0px 50px 0px;
     /* max-width: fit-content; */
     /* margin-inline: auto; */
@@ -52,18 +49,18 @@ body {
 .codeImageBackground {
     background-image: linear-gradient(to right, black, transparent, black), url('../assets/lots_of_code.png');
     /* background-image: linear-gradient(rgba(255, 0, 0, 0.263), rgba(255, 255, 0, 0.318)); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     padding: 50px 0px 50px 0px;
     /* max-width: fit-content; */
     /* margin-inline: auto; */
 }
 
-/* .textAndImage {
-    display: flex;
-    flex-direction: row;
-} */
+.textAndImage {
+    /* display: flex;
+    flex-direction: row; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .textBackground{
     max-width: 800px;
@@ -194,7 +191,12 @@ th {
 
 .tr {
     display:flex;
-    flex-direction: row !important;
+    flex-direction: row;
+}
+
+.tc {
+    display:flex;
+    flex-direction: column;
 }
 
 .th {
