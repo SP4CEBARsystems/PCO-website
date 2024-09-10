@@ -190,12 +190,11 @@ th {
 .table {
     display:flex;
     flex-direction: column;
-    flex-direction: column;
 }
 
 .tr {
     display:flex;
-    flex-direction: row;
+    flex-direction: row !important;
 }
 
 .th {
@@ -204,7 +203,8 @@ th {
     border: 1px solid white;
     padding: 8px;
     text-align: left;
-    flex: 1;
+    /* flex: 1; */
+    width: 100px;
 }
 
 .td {
@@ -212,5 +212,6 @@ th {
     border: 1px solid white;
     padding: 8px;
     text-align: left;
-    flex: 1;
+    /* flex: 1; */
+    width: 100px;
 }
