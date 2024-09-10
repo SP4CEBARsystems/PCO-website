@@ -10,49 +10,51 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <nav>
             <a href="../index.htm">
                 <div class="homeButton">
-                    <p>home</p>
+                    <p>Home</p>
                 </div>
             </a>
             <div class="navButtons">
                 <a href="../pages/blog.htm">
                     <div class="rightNavButton">
-                        <p>blog</p>
+                        <p>Blog</p>
                     </div>
                 </a>
                 <a href="../pages/dashboard.htm">
                     <div class="rightNavButton">
-                        <p>dashboard</p>
+                        <p>Dashboard</p>
                     </div>
                 </a>
                 <a href="../pages/faq.htm">
                     <div class="rightNavButton">
-                        <p>faq</p>
+                        <p>FAQ</p>
                     </div>
                 </a>
                 <a href="../pages/profile.htm">
                     <div class="rightNavButton">
-                        <p>profile</p>
+                        <p>Profile</p>
                     </div>
                 </a>
             </div>
         </nav>
+    </header>
+    <main>
         <article>
             <div class="textAndImage, programsImageBackground">
                 <div class=textBackground>
                     <h1>Dashboard</h1>
                     <h1>Study Progress</h1>
-                    <progress id="file" max="100" value="70">70%</progress>
+                    <progress id="progressMeter" max="100" value="70">70%</progress>
                     <table>
                         <tr>
                             <!-- <th>Component</th>
-                                <th>Course</th>
-                                <th>Points</th>
-                                <th>Result</th>
-                                <th>Category</th> -->
+                            <th>Course</th>
+                            <th>Points</th>
+                            <th>Result</th>
+                            <th>Category</th> -->
 
                             <th>Quartile</th>
                             <th>Course</th>
@@ -62,7 +64,7 @@
                             <th>Grade</th>
                         </tr>
                         <div>
-                            <tr class="passed">
+                            <tr class="active">
                                 <td rowspan="4">Block 1: Introduction to Computer Science</td>
                                 <td>CU75001V3 Program & Career Orientation</td>
                                 <td>2.5</td>
@@ -196,6 +198,7 @@
         </article>
     </main>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/studyProgressMeter.js"></script>
 </body>
 
 </html>
