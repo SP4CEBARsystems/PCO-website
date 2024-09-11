@@ -67,4 +67,4 @@ function addToWeightedAverage(newValue, averageValue) {
 function weightedValue(value, weight) {
     this.value = value;
     this.weight = weight;
-}  
+}
