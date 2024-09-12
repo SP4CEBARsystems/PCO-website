@@ -6,18 +6,26 @@ html {
     font-family: Arial
 } */
 
-img {
-    /* width: 200px;
-    height: auto; */
+/* img {
+    width: 200px;
+    height: auto;
     
-    /* width: 300px;
+    width: 300px;
     height: 300px;
-    object-fit: cover; */
-}
+    object-fit: cover;
+} */
 
 /* body {
 max-width: 500px; display: flex; justify-content: center;
 } */
+
+aside {
+    text-align: center;
+}
+
+aside li {
+    list-style-type: none;
+}
 
 body {
     background: black;
