@@ -2,14 +2,28 @@ window.addEventListener("DOMContentLoaded", init(), false);
 
 function init() {
     studyProgressMeter();
+    addEventListenerByquerySelectorAll("change", ".grade", studyProgressMeter);
+}
+
+
+function addEventListenerByquerySelectorAll(type, query, eventFunction) {
+    const inputs = document.querySelectorAll(query);
+    console.log("attached event", inputs);
+    for(let input of inputs) {
+        input.addEventListener(type, eventFunction);
+    }
 }
 
 function studyProgressMeter() {
+    console.log("studyProgressMeter");
     setProgressMeter();
 
     function setProgressMeter() {
+        const creditsEarned = getTotalCreditsEarned();
         const progressMeter = document.getElementById("progressMeter");
-        progressMeter.value = getTotalCreditsEarned();
+        const progressValue = document.getElementById("progressValue");
+        progressMeter.value = creditsEarned;
+        progressValue.innerHTML = creditsEarned;
     }
 
     function getTotalCreditsEarned() {
@@ -19,6 +33,7 @@ function studyProgressMeter() {
         for (const courseElement of courseElements) {
             totalCreditsEarned += getCourseCreditsEarned(courseElement);
         }
+        console.log("totalCreditsEarned", totalCreditsEarned);
         return totalCreditsEarned;
     }
 
@@ -26,11 +41,14 @@ function studyProgressMeter() {
         const isCoursePassed = checkCoursePassed(courseElement);
         const credits = getFloatFromQuerySelector(courseElement, ".credits");
         const creditsEarned = isCoursePassed ? credits : 0;
+        console.log("creditsEarned", creditsEarned);
         return creditsEarned;
     }
 
     function checkCoursePassed(courseElement) {
-        return getCourseGrade(courseElement) >= 5.5;
+        const isCoursePassed = getCourseGrade(courseElement) >= 5.5;
+        applyPassed(isCoursePassed, courseElement);
+        return isCoursePassed;
     }
 
     function getCourseGrade(courseElement) {
@@ -39,15 +57,23 @@ function studyProgressMeter() {
         if (examElements === null) return averageGrade.value;
         for (const examElement of examElements) {
             const newGrade = loadNewGrade(examElement);
+            console.log("newGrade",newGrade);
             averageGrade = addToWeightedAverage(newGrade, averageGrade);
         }
+        console.log("averageGrade.value", averageGrade.value);
         return averageGrade.value;
     }
 
     function loadNewGrade(examElement) {
-        const grade  = getFloatFromQuerySelector(examElement, ".grade");
+        const grade  = getFloatFromQuerySelectorInput(examElement, ".grade");
         const weight = getFloatFromQuerySelector(examElement, ".weight");
+        applyPassed(grade >= 5.5, examElement);
         return new weightedValue(grade, weight);
+    }
+
+    function applyPassed(isPassed, element) {
+        element.classList.remove("passed", "failed", "active");
+        element.classList.add(isPassed ? "passed" : "failed");
     }
 
     function getFloatFromQuerySelector(parent, query) {
@@ -55,6 +81,15 @@ function studyProgressMeter() {
         const element = parent.querySelector(query);
         if(element===null) return null;
         const number = parseFloat( element.innerHTML );
+        if(number===NaN) return null;
+        return number;
+    }
+
+    function getFloatFromQuerySelectorInput(parent, query) {
+        if(parent===null || parent===undefined) return null;
+        const element = parent.querySelector(query);
+        if(element===null) return null;
+        const number = parseFloat( element.value );
         if(number===NaN) return null;
         return number;
     }

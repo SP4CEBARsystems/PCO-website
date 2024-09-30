@@ -251,3 +251,8 @@ th {
 #progressMeter {
     width: 100%;
 }
+
+input[type="number"], textarea {
+    background-color : #000; 
+    color : #fff;
+}
