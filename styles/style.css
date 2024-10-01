@@ -215,6 +215,7 @@ th {
 .table {
     display:flex;
     flex-direction: column;
+    /* border: 1px solid white; */
 }
 
 .tr {
@@ -242,12 +243,18 @@ th {
 
 .td {
     display:flex;
-    border: 1px solid white;
+    border: 1px solid black;
+    /* border-color: black black; */
+    /* border-width: 1px 1px; */
     padding: 8px;
     text-align: left;
     /* width: 16,666666666666666666666666666667%; */
     flex: 1;
     min-width: 115.733px;
+}
+
+.quartile {
+    border: 1px solid white;
 }
 
 #progressMeter {
