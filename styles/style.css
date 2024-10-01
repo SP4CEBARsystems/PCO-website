@@ -256,3 +256,13 @@ input[type="number"], textarea {
     background-color : #000; 
     color : #fff;
 }
+
+details p {
+    /* background-color: aqua; */
+    padding-left: 20px;
+    color: #ccc;
+}
+
+/* summary{
+    background-color: black;
+} */

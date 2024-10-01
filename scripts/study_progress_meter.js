@@ -1,8 +1,34 @@
 window.addEventListener("DOMContentLoaded", init(), false);
 
 function init() {
+    loadGrades();
     studyProgressMeter();
-    addEventListenerByquerySelectorAll("change", ".grade", studyProgressMeter);
+    addEventListenerByquerySelectorAll("change", ".grade", updateGrades);
+}
+
+function updateGrades() {
+    studyProgressMeter();
+    saveGrades();
+}
+
+function loadGrades() {
+    const loadedGrades = localStorage.getItem("examGrades");
+    if (loadedGrades === undefined || loadedGrades === null) return;
+    const grades = document.querySelectorAll(".grade");
+
+    for(const gradeIndex in grades){
+        const loadedGrade = loadedGrades[gradeIndex];
+        grades[gradeIndex].value = loadedGrade !== undefined ? 1 : loadedGrade;
+    }
+}
+
+function saveGrades() {
+    let savedGrades = [];
+    const grades = document.querySelectorAll(".grade");
+    for(const gradeIndex in grades){
+        savedGrades.push(grades[gradeIndex].value);
+    }
+    localStorage.setItem("examGrades", savedGrades);
 }
 
 
