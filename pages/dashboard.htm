@@ -49,183 +49,202 @@
         <img id="hz-logo" src="../assets/hz-logo.svg" alt="hz logo"></img>
     </header>
     <main>
-        <article>
-            <div class="textAndImage codeImageBackground firstBar">
-                <div class=textBackground>
-                    <h1>Dashboard</h1>
-                    <h1>Study Progress <span id="progressValue"></span>EC / 60EC</h1>
-                    <div class="table">
-                        <progress id="progressMeter" max="60" value="70">70%</progress>
+        <section>
+            <article>
+                <div class="textAndImage codeImageBackground firstBar">
+                    <div class=textBackground>
+                        <h1>Dashboard</h1>
+                        <h1>Study Progress <span id="progressValue"></span>EC / 60EC</h1>
+                        <div class="table">
+                            <progress id="progressMeter" max="60" value="70">70%</progress>
 
-                        <div class="tr tableHeader">
-                            <!-- <div class="td">Component</div>
+                            <div class="tr tableHeader">
+                                <!-- <div class="td">Component</div>
                             <div class="td">Course</div>
                             <div class="td">Points</div>
                             <div class="td">Result</div>
                             <div class="td">Category</div> -->
 
-                            <div class="th">Quartile</div>
-                            <div class="th">Course</div>
-                            <div class="th">EC</div>
-                            <div class="th">Exam</div>
-                            <div class="th">Weight</div>
-                            <div class="th">Grade</div>
-                        </div>
+                                <div class="th">Quartile</div>
+                                <div class="th">Course</div>
+                                <div class="th">EC</div>
+                                <div class="th">Exam</div>
+                                <div class="th">Weight</div>
+                                <div class="th">Grade</div>
+                            </div>
 
-                        <!-- classes to be added: credits exam grade weight -->
+                            <!-- classes to be added: credits exam grade weight -->
 
-                        <div class="tr quartile active">
-                            <div class="td">Block 1: Introduction to Computer Science</div>
-                            <div class="tc">
-                                <div class="tr course">
-                                    <div class="td">CU75001V3 Program & Career Orientation</div>
-                                    <div class="td credits">2.5</div>
-                                    <div class="tc">
-                                        <div class="tr exam">
-                                            <div class="td">Presentation (individual)</div>
-                                            <div class="td weight">100%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                            <div class="tr quartile active">
+                                <div class="td">Block 1: Introduction to Computer Science</div>
+                                <div class="tc">
+                                    <div class="tr course">
+                                        <div class="td">CU75001V3 Program & Career Orientation</div>
+                                        <div class="td credits">2.5</div>
+                                        <div class="tc">
+                                            <div class="tr exam">
+                                                <div class="td">Presentation (individual)</div>
+                                                <div class="td weight">100%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tr course">
-                                    <div class="td">CU75002V2 Computer Science Basics</div>
-                                    <div class="td credits">5.0</div>
-                                    <div class="tc">
-                                        <div class="tr exam">
-                                            <div class="td">Written knowledge test</div>
-                                            <div class="td weight">100%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                                    <div class="tr course">
+                                        <div class="td">CU75002V2 Computer Science Basics</div>
+                                        <div class="td credits">5.0</div>
+                                        <div class="tc">
+                                            <div class="tr exam">
+                                                <div class="td">Written knowledge test</div>
+                                                <div class="td weight">100%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tr course">
-                                    <div class="td">CU75003V1 Programming Basics</div>
-                                    <div class="td credits">5.0</div>
-                                    <div class="tc">
-                                        <div class="tr exam">
-                                            <div class="td">Case test</div>
-                                            <div class="td weight">100%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                                    <div class="tr course">
+                                        <div class="td">CU75003V1 Programming Basics</div>
+                                        <div class="td credits">5.0</div>
+                                        <div class="tc">
+                                            <div class="tr exam">
+                                                <div class="td">Case test</div>
+                                                <div class="td weight">100%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tr course">
-                                    <div class="td">CU75068V3 Personal Professional Development Exploration</div>
-                                    <div class="td credits">12.5</div>
-                                    <div class="tc">
-                                        <div class="tr exam">
-                                            <div class="td">Criterion-focused interview</div>
-                                            <div class="td weight">100%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                                    <div class="tr course">
+                                        <div class="td">CU75068V3 Personal Professional Development Exploration</div>
+                                        <div class="td credits">12.5</div>
+                                        <div class="tc">
+                                            <div class="tr exam">
+                                                <div class="td">Criterion-focused interview</div>
+                                                <div class="td weight">100%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="tr quartile empty">
-                            <div class="td rowspan2">Block 2: Game Development</div>
-                            <div class="tc">
-                                <div class="tr course">
-                                    <div class="td rowspan2">CU75004V1 Object-Oriented Programming</div>
-                                    <div class="td rowspan2 credits">10.0</div>
-                                    <div class="tc">
-                                        <div class="tr exam">
-                                            <div class="td">Group presentation</div>
-                                            <div class="td weight">50%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
-                                        </div>
-                                        <div class="tr exam">
-                                            <div class="td">Written knowledge test</div>
-                                            <div class="td weight">50%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                            <div class="tr quartile empty">
+                                <div class="td rowspan2">Block 2: Game Development</div>
+                                <div class="tc">
+                                    <div class="tr course">
+                                        <div class="td rowspan2">CU75004V1 Object-Oriented Programming</div>
+                                        <div class="td rowspan2 credits">10.0</div>
+                                        <div class="tc">
+                                            <div class="tr exam">
+                                                <div class="td">Group presentation</div>
+                                                <div class="td weight">50%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
+                                            <div class="tr exam">
+                                                <div class="td">Written knowledge test</div>
+                                                <div class="td weight">50%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="tr quartile empty">
-                            <div class="td">Block 3: Modern Software Development 1</div>
-                            <div class="tc">
-                                <div class="tr course">
-                                    <div class="td">CU75080V2 Framework Project 1</div>
-                                    <div class="td credits">10.0</div>
-                                    <div class="tc">
-                                        <div class="tr exam">
-                                            <div class="td">On-site case test</div>
-                                            <div class="td weight">40%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
-                                        </div>
-                                        <div class="tr exam">
-                                            <div class="td">Database exam</div>
-                                            <div class="td weight">10%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
-                                        </div>
-                                        <div class="tr exam">
-                                            <div class="td">Group presentation project results</div>
-                                            <div class="td weight">25%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
-                                        </div>
-                                        <div class="tr exam">
-                                            <div class="td">Group portfolio on requirements</div>
-                                            <div class="td weight">25%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                            <div class="tr quartile empty">
+                                <div class="td">Block 3: Modern Software Development 1</div>
+                                <div class="tc">
+                                    <div class="tr course">
+                                        <div class="td">CU75080V2 Framework Project 1</div>
+                                        <div class="td credits">10.0</div>
+                                        <div class="tc">
+                                            <div class="tr exam">
+                                                <div class="td">On-site case test</div>
+                                                <div class="td weight">40%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
+                                            <div class="tr exam">
+                                                <div class="td">Database exam</div>
+                                                <div class="td weight">10%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
+                                            <div class="tr exam">
+                                                <div class="td">Group presentation project results</div>
+                                                <div class="td weight">25%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
+                                            <div class="tr exam">
+                                                <div class="td">Group portfolio on requirements</div>
+                                                <div class="td weight">25%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tr course">
-                                    <div class="td">CU75081V1 Business IT Consultancy Basics</div>
-                                    <div class="td credits">2.5</div>
-                                    <div class="tc">
-                                        <div class="tr exam">
-                                            <div class="td">Video</div>
-                                            <div class="td weight">100%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                                    <div class="tr course">
+                                        <div class="td">CU75081V1 Business IT Consultancy Basics</div>
+                                        <div class="td credits">2.5</div>
+                                        <div class="tc">
+                                            <div class="tr exam">
+                                                <div class="td">Video</div>
+                                                <div class="td weight">100%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="tr quartile empty">
-                            <div class="td">Block 4: Modern Software Development 2</div>
-                            <div class="tc">
-                                <div class="tr course">
-                                    <div class="td">CU75011V3 Framework Project 2</div>
-                                    <div class="td">10.0</div>
-                                    <div class="tc course">
-                                        <div class="tr exam">
-                                            <div class="td">Final delivery</div>
-                                            <div class="td weight">25%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
-                                        </div>
-                                        <div class="tr exam">
-                                            <div class="td">Individual project assessment</div>
-                                            <div class="td weight">25%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
-                                        </div>
-                                        <div class="tr exam">
-                                            <div class="td">IT development portfolio</div>
-                                            <div class="td weight">50%</div>
-                                            <input type="number" min="1" max="10" value="1" class="td grade"></input>
+                            <div class="tr quartile empty">
+                                <div class="td">Block 4: Modern Software Development 2</div>
+                                <div class="tc">
+                                    <div class="tr course">
+                                        <div class="td">CU75011V3 Framework Project 2</div>
+                                        <div class="td">10.0</div>
+                                        <div class="tc course">
+                                            <div class="tr exam">
+                                                <div class="td">Final delivery</div>
+                                                <div class="td weight">25%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
+                                            <div class="tr exam">
+                                                <div class="td">Individual project assessment</div>
+                                                <div class="td weight">25%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
+                                            <div class="tr exam">
+                                                <div class="td">IT development portfolio</div>
+                                                <div class="td weight">50%</div>
+                                                <input type="number" min="1" max="10" value="1"
+                                                    class="td grade"></input>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- <img class="background-image" src="../assets/all_nx_programs.png" alt="all my Lowres NX BASIC programs"/> -->
                 </div>
-                <!-- <img class="background-image" src="../assets/all_nx_programs.png" alt="all my Lowres NX BASIC programs"/> -->
-            </div>
-        </article>
+            </article>
+        </section>
     </main>
     <footer>
         <aside>
             <ul>
-                <li><a href="https://oer.hz.nl/a37f2fd2-8b35-44ce-800a-c5abe33735aa">HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
-                <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Last year's Implementation Regulations (IR) of the HZ HBO-ICT program</a></li>
+                <li><a href="https://oer.hz.nl/a37f2fd2-8b35-44ce-800a-c5abe33735aa">HZ HBO-ICT Course and Examination
+                        Regulations (CER)</a></li>
+                <li><a
+                        href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Last
+                        year's Implementation Regulations (IR) of the HZ HBO-ICT program</a></li>
                 <li><a href="https://learn.hz.nl">HZ Learn</a></li>
                 <li><a href="https://hz.osiris-student.nl/">Study progress</a></li>
                 <li><a href="https://portal.hz.nl/">HZ Portal</a></li>
