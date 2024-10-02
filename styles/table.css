@@ -1,0 +1,70 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.failed {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.passed {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+.active{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+.empty{
+    background-color: rgba(0, 0, 0, 0);
+    color: #444;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #020202;
+}
+
+
+.table {
+    display:flex;
+    flex-direction: column;
+}
+
+.tr {
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.tc {
+    display:flex;
+    flex-direction: column;
+}
+
+.th {
+    display:flex;
+    background-color: #020202;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+    flex: 1;
+    min-width: 115.733px;
+}
+
+.td {
+    display:flex;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    flex: 1;
+    min-width: 115.733px;
+}
+
+.quartile {
+    border: 1px solid white;
+}
+
+#progressMeter {
+    width: 100%;
+}
